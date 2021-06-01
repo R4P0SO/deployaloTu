@@ -25,29 +25,12 @@ public class TrabajoController {
 
     @GetMapping("/")
     public String explicacion() {
-        return "Bienvenido a la app de Max" + 
-        "<br>"+ 
-        "<br>"+
         
-        "Estas son todas las funciones que puedes realizar:" +
-        "<br>"+ 
-        "<br>"+
-
-        "- Para contar las vocales y consonantes de una palabra, escribe: /contar/{palabra}" +
         
-        "<br>"+ 
-        "<br>"+
-
-        "- Para guardar datos en la base de datos, escribe: '/insercionDatos'" + 
+        "usa(/contar/{palabra}), (/insercionDatos), (/listarDatos) o (/fraseAlReves/{texto})" +
+       
         
-        "<br>"+
-        "<br>"+
         
-        "- Para listar los datos de la base, escribe: '/listarDatos'" +
-        "<br>"+
-        "<br>"+
-
-        "- Para mostrar una frase al reves, escribe: /fraseAlReves/{texto} ";
     }
 
 
@@ -87,8 +70,7 @@ public class TrabajoController {
         String fraseAlreves = TransformarFrase.fraseAlreves(texto);
         return "- La frase original es: " + texto + 
         
-        "<br>"+ 
-        "<br>"+
+        
 
         "- La frase al revés es: " + fraseAlreves;
     }
