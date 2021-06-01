@@ -27,9 +27,7 @@ public class TrabajoController {
     public String explicacion() {
         
         
-        "usa(/contar/{palabra}), (/insercionDatos), (/listarDatos) o (/fraseAlReves/{texto})" +
-       
-        
+        return "usa(/contar/{palabra}), (/insercionDatos), (/listarDatos) o (/fraseAlReves/{texto})";  
         
     }
 
